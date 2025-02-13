@@ -1,0 +1,79 @@
+body {
+    background-color: #121212;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .about-me {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    text-align: center;
+  }
+  
+  .about-me img {
+    border-radius: 50%;
+    border: 5px solid #fff;
+    margin-bottom: 20px;
+  }
+  
+  .about-me h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  
+  .about-me p {
+    font-size: 1rem;
+    line-height: 1.5;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .contact-form {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    max-width: 500px;
+    margin: 50px auto;
+  }
+  
+  .contact-form h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .lb {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+  }
+  
+  .infos {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    margin-bottom: 15px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ff6600;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #e55e00;
+  }
+  
