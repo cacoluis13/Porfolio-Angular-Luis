@@ -1,57 +1,137 @@
+/* Estilos globales */
 body {
-    background-color: #121212;
-    font-family: 'Arial', sans-serif;
-}
-
-.container {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(10px);
+    font-family: Consolas, monospace;
+    background-color: #212121; /* Fondo gris oscuro */
+    margin: 0;
+    padding: 0;
+    color: #E0E0E0; /* Color del texto claro */
+  }
+  
+  /* Contenedor principal */
+  .container-fluid {
+    background-color: #000000;
+    color: white;
+    padding: 50px;
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+    margin-top: 50px; /* Separación superior */
+  }
+  
+  /* Centramos todo el contenido */
+  .container-fluid .row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
     text-align: center;
-}
+  }
+  
+  /* Títulos */
+  h1.text-center, h2 {
+    font-weight: bold;
+  }
+  
+  h1 {
+    font-size: 3.5rem; /* Mayor tamaño */
+    letter-spacing: 1px;
+    color: #ffffff; /* Blanco */
+    margin-bottom: 40px; /* Más separación */
+  }
+  
+  h2 {
+    font-size: 2.2rem;
+    color: #ffffff; /* Blanco */
+    margin-bottom: 25px; /* Mayor separación entre título y contenido */
+  }
+  
+  /* Separadores */
+  hr.text-light {
+    border: 0;
+    border-top: 2px solid #ffffff;
+    width: 60%;
+    margin: 30px auto; /* Separación mayor */
+  }
+  
+  /* Progreso */
+  .progress {
+    height: 30px;
+    border-radius: 25px;
+    margin-top: 25px; /* Separación mayor entre barras */
+    background-color: #424242; /* Gris oscuro para el fondo de la barra */
+  }
+  
+  .progress-bar {
+    background-color: #388e3c; /* Verde oscuro */
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 25px;
+    transition: width 0.5s ease;
+    padding: 5px 0; /* Añadir padding para mejorar el texto */
+  }
+  
+  /* Colores de las barras de progreso */
+  .progress-bar[style*="width: 90%"] {
+    background-color: #388e3c; /* Verde oscuro */
+  }
+  
+  .progress-bar[style*="width: 80%"] {
+    background-color: #0288d1; /* Azul más brillante */
+  }
+  
+  .progress-bar[style*="width: 75%"] {
+    background-color: #f57c00; /* Naranja fuerte */
+  }
+  
+  .progress-bar[style*="width: 70%"] {
+    background-color: #d32f2f; /* Rojo fuerte */
+  }
+  
+  /* Soft Skills */
+  ul.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+    font-size: 1.2rem;
+    color: #E0E0E0; /* Color del texto de la lista */
+    margin-top: 30px; /* Separación mayor */
+  }
+  
+  ul.list-unstyled li {
+    margin-bottom: 15px; /* Separación entre elementos de la lista */
+  }
+  
+  ul.list-unstyled li i {
+    color: #4caf50; /* Verde para los íconos */
+  }
+  
+  /* Espaciado entre las filas */
+  .row.mt-5 {
+    margin-top: 70px; /* Más separación entre filas */
+  }
+  
+  /* Columnas */
+  .col-md-6 {
+    margin-bottom: 40px; /* Separación más amplia entre columnas */
+    padding: 0 15px; /* Padding a los lados para separación adicional */
+  }
+  
+  /* Espaciado superior */
+  div[style="height: 80px;"] {
+    height: 80px;
+  }
+  
+  /* Iconos */
+  i.fas {
+    font-size: 1.3rem;
+  }
+  
+  /* Efecto hover en las barras de progreso */
+  .progress-bar:hover {
+    opacity: 0.9;
+  }
 
-h2 {
-    font-size: 2rem;
-    color: #fff;
-    margin-bottom: 25px;
-}
-
-.row {
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);  /* Tres columnas de igual tamaño */
-    gap: 20px;  /* Espacio entre las columnas */
-    justify-items: center;  /* Centra los elementos en cada columna */
-}
-
-.col-md-4 {
-    padding: 10px;
-}
-
-.col-md-4 a {
-    display: block;
-    transition: transform 0.3s ease-in-out;
-}
-
-.img-fluid {
-    width: 150px;  /* Tamaño fijo para las imágenes */
-    height: 150px;  /* Tamaño fijo para las imágenes */
-    object-fit: contain;  /* Mantiene la relación de aspecto */
-    border-radius: 8px;
-    transition: opacity 0.3s ease;
-}
-
-.img-fluid:hover {
-    opacity: 0.8;
-}
-
-.mb-2 {
-    margin-bottom: 15px;
-}
-
-/* Agregar efectos de hover para las imágenes */
-.col-md-4 a:hover .img-fluid {
-    transform: scale(1.1);
-}
+  .skill-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+  }
+    

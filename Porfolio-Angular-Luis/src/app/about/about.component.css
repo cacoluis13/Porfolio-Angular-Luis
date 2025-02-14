@@ -1,79 +1,133 @@
+/* Estilos generales */
 body {
-    background-color: #121212;
-    font-family: 'Arial', sans-serif;
-  }
-  
-  .about-me {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(10px);
-    text-align: center;
-  }
-  
-  .about-me img {
-    border-radius: 50%;
-    border: 5px solid #fff;
-    margin-bottom: 20px;
-  }
-  
-  .about-me h2 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-  }
-  
-  .about-me p {
-    font-size: 1rem;
-    line-height: 1.5;
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
-  .contact-form {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(10px);
-    text-align: center;
-    max-width: 500px;
-    margin: 50px auto;
-  }
-  
-  .contact-form h3 {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-  }
-  
-  .lb {
-    display: block;
-    margin: 10px 0 5px;
-    font-weight: bold;
-  }
-  
-  .infos {
-    width: 100%;
-    padding: 10px;
-    border-radius: 8px;
-    border: none;
-    outline: none;
-    margin-bottom: 15px;
-  }
-  
-  button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 8px;
-    background-color: #ff6600;
-    color: white;
-    cursor: pointer;
-    font-size: 1rem;
-    margin: 5px;
-    transition: background 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #e55e00;
-  }
-  
+  font-family: Consolas, monospace;
+  background-color: #121212; /* Fondo oscuro */
+  color: #eaeaea; /* Texto claro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Asegura que el contenido esté centrado verticalmente */
+  margin: 0;
+}
+
+/* Contenedor principal */
+.about-container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 40px;
+  text-align: center; /* Centra los textos dentro del contenedor */
+}
+
+/* Estilo para las imágenes del perfil */
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #fff; /* Borde blanco para resaltar la imagen */
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+/* Títulos */
+h1, h2 {
+  color: #fff; /* Títulos en blanco para destacar */
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+/* Texto general */
+p {
+  font-size: 1.1rem;
+  color: #d1d1d1; /* Texto gris claro */
+}
+
+/* Lista de habilidades */
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li {
+  font-size: 1.1rem;
+  color: #d1d1d1; /* Color gris para las listas */
+}
+
+/* Estilo para los iconos */
+i {
+  color: #28a745; /* Color verde para los íconos */
+}
+
+/* Tarjetas de educación */
+.info-card {
+  background-color: #1f1f1f; /* Fondo oscuro para las tarjetas */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  text-align: left; /* Alineación del texto dentro de la tarjeta */
+}
+
+/* Títulos dentro de las tarjetas */
+.info-card h4 {
+  font-size: 1.3rem;
+  color: #fff; /* Títulos dentro de las tarjetas en blanco */
+}
+
+.info-card p {
+  font-size: 1.1rem;
+  color: #d1d1d1; /* Texto claro en las tarjetas */
+}
+
+/* Hobbies */
+.hobbies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center; /* Centra los elementos de los hobbies */
+}
+
+.hobby {
+  padding: 10px 20px;
+  background-color: #007bff; /* Color azul para los hobbies */
+  color: white;
+  border-radius: 20px;
+  font-size: 1rem;
+}
+
+/* Estilo de espaciado y márgenes */
+.mt-5 {
+  margin-top: 50px;
+}
+
+.text-muted {
+  color: #a1a1a1; /* Gris más suave para textos menos importantes */
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+.fs-5 {
+  font-size: 1.25rem;
+}
+
+.display-4 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+/* Asegurarse de que los enlaces sean legibles */
+a {
+  color: #007bff; /* Color azul brillante para enlaces */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
